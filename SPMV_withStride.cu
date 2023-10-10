@@ -228,6 +228,7 @@ __global__ void partialproduct(float *values, int *columns, int *rows, float *x,
         free(coo_row_indices);
         free(coo_col_indices);
         free(coo_values);
+        free(y_hw);
         //cudafree
         cudaFree(x_d);
         cudaFree(y_d);
